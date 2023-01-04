@@ -1,0 +1,23 @@
+.input-group
+    position: relative
+
+.input
+    position: absolute
+    font-size: 100%
+    padding: 0.8em
+    outline: none
+    border: 2px solid rgb(200, 200, 200)
+    background-color: transparent
+    border-radius: 20px
+
+
+label
+    position: absolute
+    transform-origin: top left
+    transform: translate(0, 16px) scale(1)
+    transition: all .1s ease-in-out
+
+
+.input-group :is(.input:focus, .input:valid)~label
+    transform: translate(30px, -5px) scale(.90)
+    background-color: #e8e8e8
