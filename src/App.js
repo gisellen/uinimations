@@ -1,13 +1,15 @@
-import './App.sass';
-import Input from './components/form/Input';
-import Title from './components/title/Title';
+import "./App.sass";
+import Sidebar from "./components/common/Sidebar/Sidebar";
+
+
 
 function App() {
   return (
     <div className="App">
-      <Title />
-      <h1>Form Inputs</h1>
-      <Input />
+      <Sidebar />
+      <div className="view">
+
+      </div>
     </div>
   );
 }
