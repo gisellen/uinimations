@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import "./App.sass";
 import Footer from "./components/common/footer/Footer";
 import Sidebar from "./components/common/Sidebar/Sidebar";
@@ -11,10 +12,11 @@ function App() {
     <div className="App">
       <Sidebar />
       <div className="view">
-        <Home />
+        <Outlet />
+        <Footer />
       </div>
     </div>
-    <Footer />
+
     </>
   );
 }

@@ -9,17 +9,22 @@ import {
 import Root from './routes/root'
 import ErrorPage from './routes/error';
 import Input from './pages/Inputs'
+import Home from './pages/Home/Home';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
-    errorElement: <ErrorPage />
+    errorElement: <ErrorPage />,
+    children: [{
+      path:"/",
+      element: <Home/>
+    },{
+      path: "/inputs",
+      element: <Input />
+   }]
   },
-  {
-     path: "/inputs",
-     element: <Input />
-  }
+ 
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
