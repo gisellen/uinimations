@@ -1,8 +1,12 @@
 import React from "react";
 import "./title.sass";
-export default function Title() {
+export default function Title(props) {
+const style = {
+  fontSize:  `${props.size}px` //default measurement is in px
+}
+
   return (
-    <div className="Title">
+    <div className="Title" style={style}>
       <span>U</span>
       <span>i</span>
       <span>n</span>
