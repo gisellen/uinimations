@@ -4,6 +4,7 @@ import Input from "../pages/Inputs";
 import Home from "../pages/Home/Home";
 
 import {createBrowserRouter} from 'react-router-dom'
+import Buttons from "../components/buttons/Buttons";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
         path: "/inputs",
         element: <Input />,
       },
+      {
+        path: "/buttons",
+        element: <Buttons />
+      }
     ],
   },
 ]);
